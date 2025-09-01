@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tugas 2 - Tampilan Kece</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      margin: 0;
+      padding: 50px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #333;
+    }
+
+    .table-container {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      width: 90%;
+      max-width: 900px;
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    thead {
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+      color: #fff;
+    }
+
+    thead th {
+      padding: 20px 15px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    tbody tr {
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tbody tr:hover {
+      background-color: #dbeafe;
+      transform: scale(1.02);
+      box-shadow: 0 4px 15px rgba(38, 132, 255, 0.3);
+    }
+
+    tbody td {
+      padding: 15px 10px;
+      color: #555;
+    }
+
+    caption {
+      font-size: 2rem;
+      font-weight: 700;
+      padding: 25px 0;
+      color: #fff;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      thead th, tbody td {
+        padding: 12px 8px;
+        font-size: 0.9rem;
+      }
+      caption {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="table-container">
+    <caption>Data Orang Ganteng</caption>
+    <table>
+      <thead>
+        <tr>
+          <th>NO</th>
+          <th>Nama</th>
+          <th>Tempat Lahir</th>
+          <th>Tanggal Lahir</th>
+          <th>Alamat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Zacky Kasep</td>
+          <td>Bandung</td>
+          <td>11 maret 2008</td>
+          <td>Bandung</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Andre ganteng</td>
+          <td>cimahi</td>
+          <td>27 April 2007</td>
+          <td>Bandung</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
